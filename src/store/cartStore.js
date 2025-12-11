@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { createSelectors } from "./createSelector";
 
 const useCartStore = create((set) => ({
     cart: [],
@@ -6,5 +7,7 @@ const useCartStore = create((set) => ({
     removeFromCart: (item) => set((state) => ({ cart: state.cart.filter(product => product.id !== item.id) })),
     clearCart: () => set(() => ({ cart: [] })),
 }))
+
+export const useCartStoreSelectors = createSelectors(useCartStore)
 
 export { useCartStore };

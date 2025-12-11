@@ -1,11 +1,16 @@
-import { useCartStore } from "../../store/cartStore"
+import { useCartStore, useCartStoreSelectors } from "../../store/cartStore"
 
 const Cart = () => {
     // const cart = []
 
-    const cart = useCartStore(state => state.cart)
-    const removeFromCart = useCartStore(state => state.removeFromCart)
-    const clearCart = useCartStore(state => state.clearCart)
+    // const cart = useCartStore(state => state.cart)
+    // const removeFromCart = useCartStore(state => state.removeFromCart)
+    // const clearCart = useCartStore(state => state.clearCart)
+
+    const cart = useCartStoreSelectors.use.cart();
+    const removeFromCart = useCartStoreSelectors.use.removeFromCart();
+    const clearCart = useCartStoreSelectors.use.clearCart();
+
 
 
     const handleRemoveFromCart = (product) => {
