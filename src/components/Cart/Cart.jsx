@@ -4,13 +4,16 @@ const Cart = () => {
     // const cart = []
 
     const cart = useCartStore(state => state.cart)
+    const removeFromCart = useCartStore(state => state.removeFromCart)
+    const clearCart = useCartStore(state => state.clearCart)
+
 
     const handleRemoveFromCart = (product) => {
-        // removeFromCart(product)
+        removeFromCart(product)
     }
 
     const handleEmptyCart = () => {
-        // clearCart()
+        clearCart()
     }
 
     if (!cart.length) {
@@ -19,9 +22,9 @@ const Cart = () => {
 
     return (
         <div className="flex items-center gap-3 flex-col">
-            {cart?.map(prod => (
-                <div key={prod.id}>
-                    <span className={''}>{prod.name}</span>
+            {cart?.map((prod, index) => (
+                <div key={index}>
+                    <span className={''}>{prod.id} : {prod.name}</span>
                     <button onClick={() => handleRemoveFromCart(prod)} className={'border border-red-500 px-4 py-1 m-1'}>remove</button>
                     <hr className={"border-b-orange-500"} />
                 </div>

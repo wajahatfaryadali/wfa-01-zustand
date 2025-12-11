@@ -15,7 +15,7 @@ const ProductList = () => {
                 <div key={index}>
                     <h2 className="font-bold">{product.id} : {product.name}</h2>
                     <p>{product.description}</p>
-                    <button onClick={() => handleAddToCart(product)}>
+                    <button onClick={() => handleAddToCart(product)} className={'border border-green-500 px-3 py-1 m-1'}>
                         add to cart
                     </button>
                     <hr />
