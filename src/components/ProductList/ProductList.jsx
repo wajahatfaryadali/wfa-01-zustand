@@ -10,7 +10,7 @@ const ProductList = () => {
         <div>
             {sampleProducts.map((product, index) => (
                 <div key={index}>
-                    <h4>{product.id} : {product.name}</h4>
+                    <h2 className="font-bold">{product.id} : {product.name}</h2>
                     <p>{product.description}</p>
                     <button onClick={() => handleAddToCart(product)}>
                         add to cart
