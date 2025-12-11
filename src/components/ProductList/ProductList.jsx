@@ -1,9 +1,12 @@
+import { useCartStore } from "../../store/cartStore";
 import { sampleProducts } from "../../utils/sampleData";
 
 const ProductList = () => {
 
+    const addToCart = useCartStore(state => state.addToCart)
+
     const handleAddToCart = (prod) => {
-        console.log('prod to be added ', prod)
+        addToCart(prod)
     }
 
     return (

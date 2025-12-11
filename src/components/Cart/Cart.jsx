@@ -1,30 +1,34 @@
+import { useCartStore } from "../../store/cartStore"
 
 const Cart = () => {
-    let cart = []
+    // const cart = []
+
+    const cart = useCartStore(state => state.cart)
+
     const handleRemoveFromCart = (product) => {
-        console.log(product)
+        // removeFromCart(product)
     }
 
     const handleEmptyCart = () => {
-        console.log('clear')
+        // clearCart()
     }
 
-    if(!cart.length){
+    if (!cart.length) {
         return <div>empty cart...</div>
     }
 
     return (
-        <div>
+        <div className="flex items-center gap-3 flex-col">
             {cart?.map(prod => (
                 <div key={prod.id}>
-                    <span className={classes.span}>{prod.name}</span>
-                    <button onClick={() => handleRemoveFromCart(prod.id)} className={classes.button}>remove</button>
-                    <hr className={classes.hr} />
+                    <span className={''}>{prod.name}</span>
+                    <button onClick={() => handleRemoveFromCart(prod)} className={'border border-red-500 px-4 py-1 m-1'}>remove</button>
+                    <hr className={"border-b-orange-500"} />
                 </div>
             ))}
             {cart.length ?
-                <button onClick={handleEmptyCart} className={classes.button}>
-                    empty cart
+                <button onClick={handleEmptyCart} className={'border border-red-900 bg-red-400 px-4 py-2'}>
+                    clear all
                 </button>
                 :
                 <div />
