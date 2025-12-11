@@ -21,12 +21,19 @@ const Cart = () => {
         clearCart()
     }
 
+    const handleclearStorage = () => {
+        useCartStore.persist.clearStorage()
+    }
+
     if (!cart.length) {
         return <div>empty cart...</div>
     }
 
     return (
         <div className="flex items-center gap-3 flex-col">
+            <button onClick={handleclearStorage} className={'border border-blue-900 bg-blue-400 px-4 py-2'}>
+                remove storage
+            </button>
             {cart?.map((prod, index) => (
                 <div key={index}>
                     <span className={''}>{prod.id} : {prod.name}</span>
