@@ -1,0 +1,22 @@
+export const sampleProducts = [
+  { "id": 1, "name": "Wireless Bluetooth Headphones", "description": "Over-ear headphones with noise cancellation and long battery life." },
+  { "id": 2, "name": "Smart Watch Series 8", "description": "Health and fitness smartwatch with heart rate and GPS tracking." },
+  { "id": 3, "name": "Mechanical Keyboard", "description": "RGB mechanical keyboard with blue switches." },
+  { "id": 4, "name": "Portable Power Bank 20,000mAh", "description": "High-capacity fast-charging power bank with LED indicators." },
+  { "id": 5, "name": "USB-C Fast Charger", "description": "20W PD wall charger for smartphones and tablets." },
+  { "id": 6, "name": "Laptop Stand Adjustable", "description": "Aluminum adjustable stand for laptops up to 17 inches." },
+  { "id": 7, "name": "Wireless Mouse", "description": "Ergonomic 2.4GHz wireless mouse with adjustable DPI." },
+  { "id": 8, "name": "Gaming Chair", "description": "Comfortable ergonomic gaming chair with adjustable armrests." },
+  { "id": 9, "name": "4K Action Camera", "description": "Waterproof action camera with wide-angle lens and accessories." },
+  { "id": 10, "name": "Bluetooth Speaker", "description": "Portable speaker with deep bass and 12-hour playtime." },
+  { "id": 11, "name": "LED Desk Lamp", "description": "Touch-controlled LED lamp with 3 brightness modes." },
+  { "id": 12, "name": "Smartphone Tripod", "description": "Flexible tripod for smartphones with rotating head." },
+  { "id": 13, "name": "External Hard Drive 1TB", "description": "Portable USB 3.0 external hard drive for data backup." },
+  { "id": 14, "name": "Noise-Cancelling Earbuds", "description": "Lightweight earbuds with active noise cancellation." },
+  { "id": 15, "name": "HDMI Cable 2M", "description": "High-speed HDMI cable supporting 4K UHD." },
+  { "id": 16, "name": "Smart LED Bulb", "description": "Wi-Fi enabled LED bulb with color changing options." },
+  { "id": 17, "name": "Fitness Band", "description": "Activity tracker with steps, calories, and sleep monitoring." },
+  { "id": 18, "name": "Portable Mini Fan", "description": "Rechargeable mini fan ideal for travel and desk use." },
+  { "id": 19, "name": "Wireless Keyboard Mouse Combo", "description": "Slim wireless keyboard + mouse set with silent keys." },
+  { "id": 20, "name": "Tabletop Microphone", "description": "USB condenser mic perfect for streaming and recording." }
+]
